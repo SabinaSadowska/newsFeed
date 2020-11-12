@@ -14,7 +14,7 @@ Zanim przystąpi się do uruchomienia projektu należy globalnie zainstalować J
 Powyższą komendę należy wpisać w nowym oknie terminala, z poziomu folderu, w którym znajduje się lokalnie aplikacja NewsFedd na Twoim komputerze.
 
 ### `json-server --watch db.json --port 3004` 
-W nowym oknie terminala (także z poziomu folderu z aplikacją) uruchom fikcyjny serwer powyższą komendą. Serwer będzie dostępny pod http://localhost:3004 a dane pod http://localhost:3004/posts
+W nowym oknie terminala (także z poziomu folderu z aplikacją) uruchom fikcyjny serwer powyższą komendą. Serwer będzie dostępny pod http://localhost:3004 a dane pod http://localhost:3004/posts (pamiętaj, żeby nie zmieniać docelowego portu 3004, gdyż przy użyciu innego aplikacja nie będzie pobierać danych - jest on bezpośrednio w kodzie)
 
 ### `npm start` 
 Powyższą komendą uruchom aplikację w wersji deweloperskiej pod adresem [http://localhost:3000](http://localhost:3000)
