@@ -46,6 +46,7 @@ function App() {
             imgPath={post.thumb}
             text={post.excerpt}
             articlePath={post.url}
+            key={post.date}
           />
         ))}
       </InfiniteScroll>
