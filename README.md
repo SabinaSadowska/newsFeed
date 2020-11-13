@@ -1,6 +1,7 @@
 # Aplikacja NewsFeed
 
 Ten projekt został utworzony w następujących technologiach: React, Sass. Biblioteki pomocnicze: JSON Server, Material-UI, Axios, react-infinite-scroll-component
+W katalogu src znajduje się katalog components, w którym dostępne są wszystkie komponenty aplikacji. W pliku db.json znajdują się dane potrzebne do uruchomienia fikcyjnego serwera. Style znajdują się w folderze components, odzielnie, w folderze danego komponentu.
 
 ## Instrukcja 
 
