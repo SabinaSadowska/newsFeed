@@ -1,30 +1,29 @@
-# Aplikacja NewsFeed
+# NewsFeed App
 
-Ten projekt został utworzony w następujących technologiach: React, Sass. Biblioteki pomocnicze: JSON Server, Material-UI, Axios, react-infinite-scroll-component
-W katalogu src znajduje się katalog components, w którym dostępne są wszystkie komponenty aplikacji. W pliku db.json znajdują się dane potrzebne do uruchomienia fikcyjnego serwera. Style znajdują się w folderze components, odzielnie, w folderze danego komponentu.
+This project has been created using this technologies: React, Sass, JSON Server, Material-UI, Axios, react-infinite-scroll-component.
+In src folder there is components folder, where all componets of the app are stored. In db.json fine there is data needed to run json-serever. 
 
-## Instrukcja 
-
-Oto lista komend, które należy wykonać w termianu, żeby poprawnie uruchomić projekt:
+## Steps to run the app
 
 
-### `npm install -g json-server` 
-Zanim przystąpi się do uruchomienia projektu należy globalnie zainstalować JSON server wpisując powyższą komendę w terminalu. Na Linuxie dodaj sudo bezpośrednio przed komendą.
+### 1) `npm install -g json-server` 
+Install globally JSON server (on Linux use: sudo npm install -g json-server)
 
-### `npm install` 
-Powyższą komendę należy wpisać w nowym oknie terminala, z poziomu folderu, w którym znajduje się lokalnie aplikacja NewsFedd na Twoim komputerze.
+### 2) `npm install` 
+thise should be done in the project folder (not globally)
 
-### `json-server --watch db.json --port 3004` 
-W nowym oknie terminala (także z poziomu folderu z aplikacją) uruchom fikcyjny serwer powyższą komendą. Serwer będzie dostępny pod http://localhost:3004 a dane pod http://localhost:3004/posts (pamiętaj, żeby nie zmieniać docelowego portu 3004, gdyż przy użyciu innego aplikacja nie będzie pobierać danych - jest on bezpośrednio w kodzie)
-
-### `npm start` 
-Powyższą komendą uruchom aplikację w wersji deweloperskiej pod adresem [http://localhost:3000](http://localhost:3000)
+### 3) `json-server --watch db.json --port 3004` 
+In the new terminal window (in the project folder) run demo JSON webserver. The server will run on http://localhost:3004 and data on http://localhost:3004/posts Make sure to not change port 3004 otherwise the app will not work
 
 
-### Pamiętaj, żeby jednocześnie mieć otwarte dwa okna terminala, jedno z uruchominym serwerem JSON dla portu 3004 a drugie dla aplikacji reaktowej dla portu 3000. Zamknięcie jednego z nich spowoduje zatrzymanie działania aplikacji.
+### 4) `npm start` 
+In the project folder. The app will be running on [http://localhost:3000]
 
 
-### Uwaga
-Jeśli przy instalacji globalnej JSON serwera na Windowsie wystąpi błąd: "nodemon.ps1 cannot be loaded because running scripts is disabled on this system." wykonaj kroki opisane w tym artykule: https://dev.to/thetradecoder/how-to-fix-error-nodemon-ps1-cannot-be-loaded-because-running-scripts-is-disabled-on-this-system-34fe 
+### Make sure to have opened 2 terminal windows. One with JSON server on port 3004 and another with the app on port 3000. Should you close one of them, the app will be not runing any longer.
+
+
+### Attention
+If during JSON server installation there is  following error: "nodemon.ps1 cannot be loaded because running scripts is disabled on this system." follow the steps from this article: https://dev.to/thetradecoder/how-to-fix-error-nodemon-ps1-cannot-be-loaded-because-running-scripts-is-disabled-on-this-system-34fe 
 
 
